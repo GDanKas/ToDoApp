@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>WatoDo</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" />
+      <h1>WatoDo</h1>
+    </header>
+    <main>
+      <form class="add-todo">
+        <input type="text" class="add-input" />
+        <button class="add-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select class="select-filter" name="select-filter" id="select-filter">
+            <option value="all">Todos</option>
+            <option value="completed">Concluídos</option>
+            <option value="uncompleted">Inconclusos</option>
+          </select>
+        </div>
+      </form>
+      <div class="container">
+        <ul class="list-todo"></ul>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
